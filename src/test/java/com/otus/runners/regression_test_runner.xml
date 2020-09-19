@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OTUS Automation Regression Suite" parallel="methods">
+    <test name="OTUS Regression Test">
+
+        <parameter name="reportName" value="Regression Test Report"/>
+        <parameter name="url" value="https://www.otus.com/"/>
+        <parameter name="browser" value="chrome"/>
+
+
+        <packages>
+            <package name="com.otus.tests">
+            </package>
+        </packages>
+
+    </test>
+
+</suite>

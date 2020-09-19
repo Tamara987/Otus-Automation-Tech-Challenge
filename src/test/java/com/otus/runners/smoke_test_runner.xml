@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OTUS Automation Suite" parallel="methods">
+    <test name="OTUS Smoke Test">
+
+        <parameter name="reportName" value="Smoke Test Report"/>
+        <parameter name="url" value="https://www.otus.com/"/>
+        <parameter name="browser" value="chrome"/>
+
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="com.otus.tests"/>
+        </packages>
+
+    </test>
+
+</suite>
