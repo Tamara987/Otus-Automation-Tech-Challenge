@@ -54,7 +54,7 @@ public class GradebookTests extends TestBase {
     @Test
     public void selectStandardsOptionsMasterySetting2() {
 
-        test = report.createTest("Verify subtitle is Gradebook");
+        test = report.createTest("Verify Decaying average is selected");
         mainPage.clickLoginButton();
         test.info("Navigated from Main Page to Login Page");
         loginPage.loginAsStudent();
